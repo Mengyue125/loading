@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		
+		body{
+			width: 100%;
+			height: 1000px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: rgba(11,48,74,1.00);
+		}
+		
+		body>div{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 100%;
+			width: 300px;
+			position: absolute;
+		}
+		
+		div>span{
+			display: inline-block;
+			font-size: 5em;
+			font-weight: bold;
+			color: rgba(9,34,50,1.00);
+		}
+		
+		div:last-of-type{
+			transform-style: preserve-3d;
+		}
+		div:last-of-type span{
+			color: rgba(217,117,66,1.00);
+			transform-style: preserve-3d;
+			transform-origin: left;
+			transform: rotateY(60deg);
+			opacity: 0;
+			animation: dh 0.5s linear 3s both;
+		}
+		
+		div:last-of-type span:nth-of-type(2){
+			animation: dh 0.5s linear 3.5s both;
+		}
+		div:last-of-type span:nth-of-type(3){
+			animation: dh 0.5s linear 4s both;
+		}
+		div:last-of-type span:nth-of-type(4){
+			animation: dh 0.5s linear 4.5s both;
+		}
+		div:last-of-type span:nth-of-type(5){
+			animation: dh 0.5s linear 5s both;
+		}
+		div:last-of-type span:nth-of-type(6){
+			animation: dh 0.5s linear 5.5s both;
+		}
+		div:last-of-type span:nth-of-type(8){
+			animation: dh 0.5s linear 6s both;
+		}
+		div:last-of-type span:nth-of-type(9){
+			animation: dh 0.5s linear 6.5s both;
+		}
+		div:last-of-type span:nth-of-type(10){
+			animation: dh 0.5s linear 7s both;
+		}
+		div:last-of-type span:nth-of-type(12){
+			animation: dh 0.5s linear 7.5s both;
+		}
+		div:last-of-type span:nth-of-type(13){
+			animation: dh 0.5s linear 8s both;
+		}
+		div:last-of-type span:nth-of-type(14){
+			animation: dh 0.5s linear 8.5s both;
+		}
+		div:last-of-type span:nth-of-type(15){
+			animation: dh 0.5s linear 9s both;
+		}
+		div:last-of-type span:nth-of-type(16){
+			animation: dh 0.5s linear 9.5s both;
+		}
+		div:last-of-type span:nth-of-type(17){
+			animation: dh 0.5s linear 10s both;
+		}
+		@keyframes dh{
+			0%{
+				opacity: 0;
+				transform: rotateY(0deg)
+			}
+			
+			100%{
+				transform: rotateY(60deg);
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<span>G</span>
+		<span>l</span>
+		<span>o</span>
+		<span>b</span>
+		<span>a</span>
+		<span>l</span>
+		<span>&nbsp;</span>
+		<span>L</span>
+		<span>o</span>
+		<span>w</span>
+		<span>&nbsp;</span>
+		<span>O</span>
+		<span>f</span>
+		<span>f</span>
+		<span>i</span>
+		<span>c</span>
+		<span>e</span>
+	</div>
+	<div>
+		<span>G</span>
+		<span>l</span>
+		<span>o</span>
+		<span>b</span>
+		<span>a</span>
+		<span>l</span>
+		<span>&nbsp;</span>
+		<span>L</span>
+		<span>o</span>
+		<span>w</span>
+		<span>&nbsp;</span>
+		<span>O</span>
+		<span>f</span>
+		<span>f</span>
+		<span>i</span>
+		<span>c</span>
+		<span>e</span>
+	</div>
+	<script>
+		setTimeout(function(){
+			var body = document.querySelector("body")
+			body.style.display = 'none'
+		},11000)
+	</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		body{
+			height: 900px;
+			background: black;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+		
+		#box{
+			color: rgba(34,34,34,1.00);
+			font-size: 3em;
+			font-weight: bold;
+			letter-spacing: 5px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			border-bottom: 5px solid rgba(34,34,34,1.00);
+/*			transform: translate(-50%,-50%);*/
+		}
+		#box2{
+			color: rgba(3,167,241,1.00);
+			font-size: 3em;
+			font-weight: bold;
+			letter-spacing: 5px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+/*			transform: translate(-50%,-50%);*/
+			overflow: hidden;
+			width: 0;
+			animation: dh 3s linear both;
+			border-bottom: 5px solid rgba(3,167,241,1.00);
+		}
+		
+		@keyframes dh{
+			0%{
+				width: 0;
+			}
+			100%{
+				width: 322.19px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="box">
+		LOADING...
+	</div>
+	<div id="box2">
+		LOADING...
+	</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		
+		body{
+			background:rgba(21,21,21,1.00);
+		}
+		
+		.center{
+			position: absolute;
+			top:40%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			position: relative;
+			width: 400px;
+			height: 240px;
+		}
+		
+		ul li{
+			list-style: none;
+			border-radius: 50%;
+			border: 15px solid #000;
+			position: absolute;
+			top:100%;
+			left: 50%;
+			border-bottom-color: transparent !important;
+			border-left-color: transparent !important;
+			animation: dh 2s linear infinite both;
+			transform: translate(-50%,-50%);
+		}
+		
+		ul li:nth-child(1){
+			width: 60px;
+			height: 60px;
+			border-color: #eb4747;
+		}
+		ul li:nth-child(2){
+			width: 90px;
+			height: 90px;
+			border-color: #ebeb47;
+			animation-delay: .04s;
+		}
+		ul li:nth-child(3){
+			width: 120px;
+			height: 120px;
+			border-color: #47eb47;
+			animation-delay: .08s;
+		}
+		ul li:nth-child(4){
+			width: 150px;
+			height: 150px;
+			border-color: #47ebeb;
+			animation-delay: .12s;
+		}
+		ul li:nth-child(5){
+			width: 180px;
+			height: 180px;
+			border-color: #4747eb;
+			animation-delay: .16s;
+		}
+		
+		@keyframes dh{
+			0%{
+				transform: translate(-50%,-50%) rotate(-40deg);
+			}
+			25%{
+				transform: translate(-50%,-50%) rotate(315deg);
+			}
+			40%{
+				transform: translate(-50%,-50%) rotate(340deg);
+			}
+			80%{
+				transform: translate(-50%,-50%) rotate(315deg);
+			}
+			100%{
+				transform: translate(-50%,-50%) rotate(315deg);
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center">
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</body>
+</html>
